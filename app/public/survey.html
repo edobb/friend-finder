@@ -205,13 +205,11 @@
 				 ]
 	    	}
 
-	    	var currentURL = window.location.origin;
+			$.post('/api/friends', userData)
+			.done(function(data) {
 
-
-	    	$.get(currentURL + "/api/friends", userData, function(data){
-
-	    	$("#matchName").text(data.name);
-	    	$('#matchImg').attr("src", data.photo);
+	    	$("#matchName").text(data.matchName);
+	    	$('#matchImg').attr("src", data.matchImage);
 
 		    $("#resultsModal").modal('toggle');
 

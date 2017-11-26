@@ -1,7 +1,7 @@
 var friendsArray = [
     {
         name: 'ray ray',
-        photo: 'http://google.com',
+        photo: 'https://img.designswan.com/2012/10/finger/7.jpg',
         scores: [
                 '1',
                 '3',
@@ -17,7 +17,7 @@ var friendsArray = [
     },
     {
         name: 'Otis',
-        photo: 'http://google.com',
+        photo: 'https://img.designswan.com/2012/10/finger/7.jpg',
         scores: [
                 '4',
                 '2',
@@ -33,7 +33,7 @@ var friendsArray = [
     },
     {
         name: 'Sven',
-        photo: 'http://google.com',
+        photo: 'https://img.designswan.com/2012/10/finger/7.jpg',
         scores: [
                 '5',
                 '1',
@@ -49,7 +49,7 @@ var friendsArray = [
     },
     {
         name: 'Smith',
-        photo: 'http://google.com',
+        photo: 'https://img.designswan.com/2012/10/finger/7.jpg',
         scores: [
                 '2',
                 '4',

@@ -5,20 +5,10 @@ var path = require('path');
 var friendsArray = require('../data/friends.js');
 
 function apiRoutes(app) {
-    //POST route /api/friends handle incoming survey results
-    // app.post('/api/friends', function (req,res) {
-        
-    //     var newFriend = req.body;
 
-    //     console.log(newFriend);
-    //     friendsArray.push(newFriend);
-            
-        
-    // });
-
-    // app.get('/api/friends', function(req, res) {
-	// 	res.json(friends);
-	// });
+    app.get('/api/friends', function(req, res) {
+		res.json(friendsArray);
+	});
 
 	// Add new friend entry
 	app.post('/api/friends', function(req, res) {
@@ -32,8 +22,8 @@ function apiRoutes(app) {
 		// Compute best friend match
 		var matchName = '';
 		var matchImage = '';
-		var totalDifference = 10000; // Make the initial value big for comparison
-
+		var totalDifference = 100;
+		
 		// Examine all existing friends in the list
 		for (var i = 0; i < friendsArray.length; i++) {
 			console.log('friend = ' + JSON.stringify(friendsArray[i]));
